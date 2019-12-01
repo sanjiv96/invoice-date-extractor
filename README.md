@@ -105,7 +105,7 @@ Give an example
 Demo server rest endpoint url is : 
 
 ```
-http://52.27.172.222:5000/extract_date
+http://44.225.44.65:5000/extract_date
 ```
 
 You can send a POST request to above URL with payload like below .  
