@@ -131,11 +131,21 @@ Here is a example online service to get base64 content from the image.
 https://base64.guru/converter/encode/image
 
 ### Response 
+The format of the output response is as follows   
+1) If date is detected 
+    Response is in YYYY-MM-DD format like below.  
+    ```
+    {
+        "date": "2019-05-29"
+    }
+    ```
 
-Response is in YYYY-MM-DD format like below.  
-```
-{
-    "date": "2019-05-29"
-}
-```
+2) If date is not detected 
+    Response gives null
+    ```
+    {
+        "date": "null"
+    }
+    ```
+
 Note that the server extracts only the first occurance of any date on the receipt/invoice assuming first occurance of the date is transaction date. 
