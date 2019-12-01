@@ -159,10 +159,26 @@ Note that the server extracts only the first occurance of any date on the receip
   
 Also, note that the server is AWS EC2 t2 micro which has limited memory and processing capacity. It can not take a huge load. If you try to run multiple requests the server might run out of memory. The server is designed to serve single request at a time.
 
-### Accuracy 
+### Accuracy and Validation
 
-Date extracted from sample files of receipts folder has been compared with the actual date on receipt.    
-It has been found that 80% of the extracted dates are matching with original dates.   
-  
-You can refer <b>Output.csv</b> file for more details on the results. 
+The date has been taken as date first format for checking 
+Date extracted from sample files of receipts folder has been compared with the actual date on receipt.      
+
+
+You can refer <b>Output_updated.csv</b> file for more details on the results. 
+
+1.) The api was tested with 400 samples and the result was validated against the manualchecking of the date from receipt 
+
+2.) The file having the corrected date extracted is give Iscorrect Yes else No 
+
+3.) The result is   
+        
+        Yes    333
+        
+        No      67
+
+4.) The accuracy is 
+     acurracy =  Number of images where date is correctly extracted /  Total Number of  images 
+ With the 400 samples is 333/400 = 83.25
+
 
