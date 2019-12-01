@@ -148,4 +148,6 @@ The format of the output response is as follows
     }
     ```
 
-Note that the server extracts only the first occurance of any date on the receipt/invoice assuming first occurance of the date is transaction date. 
+Note that the server extracts only the first occurance of any date on the receipt/invoice assuming first occurance of the date is transaction date.  
+  
+Also, note that the server is AWS EC2 t2 micro which has limited memory and processing capacity. It can not take a huge load. If you try to run multiple requests the server might run out of memory. The server is designed to serve single request at a time.
