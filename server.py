@@ -38,7 +38,7 @@ def extract_date():
         # find the first match of the date 
         for match in matches:
             try:
-                date = dateutil.parser.parse(match)
+                date = dateutil.parser.parse(match, dayfirst=True)
                 date_string = str(date).split()
                 date_string = date_string[0]
                 break
