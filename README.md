@@ -1,6 +1,6 @@
 # Invoice Date Extractor
 
-Python Flask based REST API Server and a REST Client based on Python Requests Library for systematic extraction of the date from the image of an invoice. The server uses the Google Cloud Vision API for accurate text extraction. The input to file is the base_64 image content and output is the date extracted by the API in YYYY/MM/DD format.
+Python Flask based REST API Server and a REST Client based on Python Requests Library for systematic extraction of the date from the image of an invoice. The server uses the Google Cloud Vision API for accurate text extraction. The input to file is the base_64 image content and output is the date extracted by the API in YYYY-MM-DD format.
 
 ## Getting Started
 
@@ -132,10 +132,10 @@ https://base64.guru/converter/encode/image
 
 ### Response 
 
-Response is in YYYY/MM/DD format like below.  
+Response is in YYYY-MM-DD format like below.  
 ```
 {
-    "date": "2019/05/29"
+    "date": "2019-05-29"
 }
 ```
 Note that the server extracts only the first occurance of any date on the receipt/invoice assuming first occurance of the date is transaction date. 
