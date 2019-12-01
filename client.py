@@ -6,7 +6,7 @@ Rest server endpoint
 """
 import requests
 import base64
-url = 'http://52.27.172.222:5000/extract_date'
+url = 'http://44.225.44.65:5000/extract_date'
 image_path = "Add full path of image here"
 with open(image_path, "rb") as image_file:
     encoded_string = base64.b64encode(image_file.read()).decode('utf-8')
