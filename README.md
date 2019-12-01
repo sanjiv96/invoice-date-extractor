@@ -92,10 +92,13 @@ The status should show that the service is up and running.
 
 ## Testing Server using Python Client Code. 
 
-Explain what these tests test and why
+Use the client.py file to test the date extractor API using python code.   
+Add the proper image path in the client.py and run it. 
 
 ```
-Give an example
+pip3 install requests
+python3 client.py
+
 ```
 
 ## DEMO SERVER
