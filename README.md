@@ -2,6 +2,10 @@
 
 Python Flask based REST API Server and a REST Client based on Python Requests Library for systematic extraction of the date from the image of an invoice. The server uses the Google Cloud Vision API for accurate text extraction. The input to API is the base_64 image content and output is the date extracted by the API in YYYY-MM-DD format.
 
+In case if there is  an ambiguous 3-integer date (e.g. 01/05/09) the first value is considered as Day.  
+
+The server extracts only the first occurance of  date on the receipt/invoice assuming first occurance of the date is transaction date. 
+
 ## Getting Started
 
 The following instructions will help you to get a copy of the project on your EC2 server and install required softwares. 
