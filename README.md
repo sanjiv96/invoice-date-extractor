@@ -166,7 +166,7 @@ The date has been taken as date first format for checking
 Date extracted from sample files of receipts folder has been compared with the actual date on receipt.      
 
 
-You can refer <b>Output_updated.csv</b> file for more details on the results. 
+You can refer <b>output_updated.csv</b> file for more details on the results. 
 
 1.) The api was tested with 400 samples and the result was validated against the manualchecking of the date from receipt 
 
