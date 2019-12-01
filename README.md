@@ -162,6 +162,7 @@ Also, note that the server is AWS EC2 t2 micro which has limited memory and proc
 ### Accuracy and Validation
 
 The date has been taken as date first format for checking 
+
 Date extracted from sample files of receipts folder has been compared with the actual date on receipt.      
 
 
